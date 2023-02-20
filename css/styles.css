@@ -57,7 +57,7 @@ h6 {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-                rgba(0, 0, 0, 0.7)), url(/images/hero-img-desktop.jpg);
+                rgba(0, 0, 0, 0.7)), url(../images/hero-img-desktop.jpg);
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
