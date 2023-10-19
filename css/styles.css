@@ -138,13 +138,50 @@ body{
     max-width: 30rem;
 }
 
-.overlay{
-    background-color: var(--bg-secondary);
-    mix-blend-mode: overlay;
-}
+
 
 .second-rectangle{
     margin-top: -3rem;
+}
+
+.rect, .rect-small{
+    position: relative;
+    border: 1px solid transparent;
+    width: 15.62rem;
+    height: 16.25rem;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+
+.rect-small{
+    height: 9.68rem;
+}
+
+.product-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #164c2069;
+}
+
+.product-img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F8F8FA;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1rem;
+    margin-bottom: 0;
+    z-index: 5;
 }
 
 .cta-section{
@@ -196,12 +233,12 @@ footer{
     }
 
     .rect{
-        width: 12.5rem !important;
+        width: 13rem !important;
         height: 11.25rem !important;
     }
 
     .rect-small{
-        width: 12.5rem !important;
+        width: 13rem !important;
         height: 8.75rem !important;
     }
 
@@ -275,6 +312,10 @@ footer{
         border-radius: 2rem;
         padding: 3.3rem;
     }
+
+    .product-image-wrapper{
+        padding-right: .5rem;
+    }
 }
 
 
@@ -293,12 +334,12 @@ footer{
     }
 
     .rect{
-        width: 10.5rem !important;
+        width: 11rem !important;
         height: 9.25rem !important;
     }
     
     .rect-small{
-        width: 10.5rem !important;
+        width: 11rem !important;
         height: 7rem !important;
     }
 }
