@@ -297,6 +297,10 @@ footer{
         flex-direction: column !important;
     }
 
+    .services{
+        width: 21rem;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -353,5 +357,16 @@ footer{
     .rect-small{
         width: 8.5rem !important;
         height: 6rem !important;
+    }
+
+    #services{
+        width: 100%;
+        max-width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .services{
+        width: 100%;
+        max-width: 100%;
     }
 }
