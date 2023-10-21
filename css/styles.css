@@ -25,6 +25,7 @@ body{
 .btn-primary{
     background-color: var(--bg-accent);
     color: #ffffff;
+    font-weight: bold;
     border-color: var(--bg-accent);
 }
 
@@ -40,6 +41,7 @@ body{
 .btn-dark{
     background-color: var(--bg-secondary);
     color: #ffffff;
+    font-weight: bold;
     border-color: var(--bg-secondary);
 }
 
