@@ -161,6 +161,7 @@ body{
 
 .product-overlay{
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     background-color: #164c2069;
@@ -171,6 +172,11 @@ body{
     width: 100%;
     max-width: 100%;
     height: auto;
+    transition: transform 500ms linear;
+}
+
+.product-wrapper:hover>img{
+    transform: scale(1.5);
 }
 
 .product-text {
@@ -273,10 +279,6 @@ footer{
         width: 100%;
     }
 
-    .hero-text{
-        font-size: 1.875rem;
-    }
-
     .hero-sub-text{
         width: 100%;
     }
@@ -311,7 +313,7 @@ footer{
     }
 
     .h3{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .cta{
@@ -351,6 +353,10 @@ footer{
 }
 
 @media screen and (max-width: 380px) {
+    .hero-text{
+        font-size: 2.66rem;
+    }
+
     .rect{
         width: 8.5rem !important;
         height: 8.5rem !important;
