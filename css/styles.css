@@ -302,7 +302,7 @@ footer{
     }
 
     .services{
-        width: 21rem;
+        width: 23rem;
     }
 
 }
@@ -318,7 +318,7 @@ footer{
 
     .cta{
         border-radius: 2rem;
-        padding: 3.3rem;
+        padding: 2.5rem;
     }
 
     .product-image-wrapper{
@@ -328,6 +328,9 @@ footer{
 
 
 @media screen and (max-width: 531px) {
+    #products>div {
+        padding-inline: 1rem;
+    }
     .product-image-wrapper{
         margin-top: 2rem;
         align-self: center !important;
