@@ -140,6 +140,10 @@ body{
     max-width: 30rem;
 }
 
+.product-image-wrapper--xs{
+    display: none !important;
+}
+
 
 
 .second-rectangle{
@@ -321,9 +325,30 @@ footer{
         padding: 2.5rem;
     }
 
-    .product-image-wrapper{
-        padding-right: .5rem;
+    .product-image-wrapper--sm{
+       display: none !important;
     }
+
+    .product-image-wrapper--xs{
+        display: flex !important;
+        width: 80%;
+    }
+
+    .rect{
+        width:100% !important;
+        height: 9rem !important;
+    }
+
+    .rect-small{
+        width:50% !important;
+        height: 7rem !important;
+    }
+
+    .product-wrapper--full .product-img{
+        object-fit: scale-down;
+        object-position: 30% -200%;
+    }
+    
 }
 
 
@@ -332,42 +357,18 @@ footer{
         padding-inline: 1rem;
     }
     .product-image-wrapper{
-        margin-top: 2rem;
+        margin-top: 1rem;
         align-self: center !important;
     }
 
-    .rect-wrapper{
-        gap: 0.7rem !important;
-    }
-
-    .second-rectangle{
-        margin-top: -2rem;
-    }
-
-    .rect{
-        width: 11rem !important;
-        height: 9.25rem !important;
-    }
-    
     .rect-small{
-        width: 11rem !important;
-        height: 7rem !important;
+        height: 6rem !important;
     }
 }
 
 @media screen and (max-width: 380px) {
     .hero-text{
         font-size: 2.66rem;
-    }
-
-    .rect{
-        width: 8.5rem !important;
-        height: 8.5rem !important;
-    }
-
-    .rect-small{
-        width: 8.5rem !important;
-        height: 6rem !important;
     }
 
     #services{
@@ -379,5 +380,19 @@ footer{
     .services{
         width: 100%;
         max-width: 100%;
+    }
+
+    .product-image-wrapper--xs{
+        width: 90%;
+    }
+
+    .rect{
+        height: 7rem !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .product-image-wrapper--xs{
+        width: 100%;
     }
 }
