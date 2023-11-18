@@ -136,6 +136,10 @@ body{
     background-attachment: fixed;
 }
 
+.wall-paper{
+    display: none;
+}
+
 .product-content{
     max-width: 30rem;
 }
@@ -322,7 +326,20 @@ footer{
 
     .cta{
         border-radius: 2rem;
-        padding: 2.5rem;
+        padding-block: 2.5rem;
+        padding-inline: 3.2rem;
+    }
+
+    #products.section{
+        padding-top: 0;
+    }
+
+    .wall-paper{
+        display: flex;
+        flex-direction: column;
+        background-color: #005914;
+        padding-block: 2rem;
+        padding-inline-start: 1.5rem;
     }
 
     .product-image-wrapper--sm{
@@ -331,22 +348,39 @@ footer{
 
     .product-image-wrapper--xs{
         display: flex !important;
-        width: 80%;
+        flex-wrap: nowrap;
+        width: 100%;
+        overflow-x: scroll;
+        padding-inline-end: 1.5rem;
+    }
+
+    .product-image-wrapper--xs::-webkit-scrollbar {
+        width: auto;
+    }
+      
+    .product-image-wrapper--xs::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .product-image-wrapper--xs::-webkit-scrollbar-thumb{
+        background: transparent;
     }
 
     .rect{
-        width:100% !important;
-        height: 9rem !important;
+        min-width:13rem !important;
+        width: 13rem;
+        min-height: 7rem !important;
+        height: 8rem !important;
+        background-color: #fafafa;
+        border: 2px solid #fafafa;
     }
 
-    .rect-small{
-        width:50% !important;
-        height: 7rem !important;
+    .product-overlay{
+        background-color: #00591485;
     }
 
-    .product-wrapper--full .product-img{
-        object-fit: scale-down;
-        object-position: 30% -200%;
+    .product-content h3{
+        display: none;
     }
     
 }
@@ -355,14 +389,6 @@ footer{
 @media screen and (max-width: 531px) {
     #products>div {
         padding-inline: 1rem;
-    }
-    .product-image-wrapper{
-        margin-top: 1rem;
-        align-self: center !important;
-    }
-
-    .rect-small{
-        height: 6rem !important;
     }
 }
 
@@ -380,19 +406,5 @@ footer{
     .services{
         width: 100%;
         max-width: 100%;
-    }
-
-    .product-image-wrapper--xs{
-        width: 90%;
-    }
-
-    .rect{
-        height: 7rem !important;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .product-image-wrapper--xs{
-        width: 100%;
     }
 }
